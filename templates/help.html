@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<style>
+
+    .container {
+        padding: 30px;
+        
+    }
+
+    h1 {
+        color: #914F1E;
+        font-weight: bold;
+    }
+
+    .help-section {
+        margin-top: 20px;
+    }
+
+    .list-group-item {
+       
+        color: #914F1E;
+    }
+
+    .list-group-item:hover {
+        background-color: #B5C18E;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .text-muted {
+        color: #6B4226 !important;
+    }
+</style>
+
+<div class="container">
+    <h1 class="text-center mt-4">Help Desk</h1>
+
+    <!-- Help Topics -->
+    <div class="help-section mx-auto w-75">
+
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">1. How do I add a new book to the library system?</h5>
+                <p class="mb-1 text-muted">To add a new book, go to the Admin Dashboard, navigate to "Books Management", and click "Add New Book". Fill in the book details, including title, author, ISBN, category, and availability status, then click "Save".</p>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">2. How can I manage library members</h5>
+                <p class="mb-1 text-muted">Admins can manage members by accessing the "Membership" section in the dashboard. From there, you can add, edit, or remove members, check their borrowing history, and update membership status.</p>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">3. How do I update or delete a book entry?</h5>
+                <p class="mb-1 text-muted">In the "Books Management" section, find the book you want to update or delete. Click "Edit" to modify details or "Delete" to remove it from the system. Make sure to confirm deletion to avoid accidental removals.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

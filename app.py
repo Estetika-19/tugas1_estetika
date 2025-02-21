@@ -87,6 +87,10 @@ def add_member():
         return redirect(url_for('membership'))  # Redirect to membership page after adding
 
     return render_template('add_member.html')
+    
+@app.route('/help')
+def help():
+    return render_template('help.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
